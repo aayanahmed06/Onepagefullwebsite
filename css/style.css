@@ -25,7 +25,7 @@ html{
     position: relative;
     background-repeat:no-repeat;
 }
-
+/* text align */
 #hero::after{
     content:'';
     position: absolute;
