@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    justify-content:center;
+}
+
+/* Hero section */
+
+#hero{
+    background: url(/img/hero-bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    background-repeat:no-repeat;
+}
+
+#hero::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity:.3;
+    z-index:-1;
+}
+
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: white;
+}
+
+#hero #cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color:lightblue;
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid lightblue;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+}
+
+#hero #cta:hover{
+    background-color: lightblue;
+    color: white;
+}
+
+/* End */
